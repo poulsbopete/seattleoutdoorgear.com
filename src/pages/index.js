@@ -8,63 +8,35 @@ import * as styles from "../components/index.module.css"
 
 const links = [
   {
-    text: "Tutorial",
+    text: "Gear",
     url: "https://www.gatsbyjs.com/docs/tutorial",
     description:
-      "Great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
+      "Our rain gear is made from durable, waterproof materials that keep you protected from the elements, while still being comfortable to wear. Whether you're hiking, camping, or simply commuting to work, we have a wide range of rain gear to suit your needs, including jackets, pants, and ponchos.",
   },
   {
-    text: "Examples",
+    text: "About Us",
     url: "https://github.com/gatsbyjs/gatsby/tree/master/examples",
     description:
-      "A collection of websites ranging from very basic to complex/complete that illustrate how to accomplish specific tasks within your Gatsby sites.",
+      "Welcome to Seattle Outdoor Gear, your one-stop-shop for high-quality rain gear to keep you dry and comfortable in the notoriously rainy Seattle weather. We understand that the rain can be a real challenge for outdoor enthusiasts, which is why we're passionate about providing top-notch rain gear that helps you make the most of your adventures, no matter the weather.",
   },
   {
-    text: "Plugin Library",
+    text: "Our Differences",
     url: "https://www.gatsbyjs.com/plugins",
     description:
-      "Learn how to add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
+      "Our products are specifically designed for the Seattle climate, so you can trust that they'll perform well in the heavy rain and strong winds that are so common here. We also take pride in offering a range of sizes and styles, so you can find the perfect rain gear for your unique needs and preferences.",
   },
   {
-    text: "Build and Host",
+    text: "What's Next?",
     url: "https://www.gatsbyjs.com/cloud",
     description:
-      "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Gatsby Cloud. Get started for free!",
+      "At Seattle Outdoor Gear, we believe that everyone deserves to enjoy the outdoors, no matter what the weather is like. So, if you're looking for rain gear that will keep you dry, warm, and comfortable, look no further than our online store. Browse our collection today, and experience the difference that quality rain gear can make to your outdoor adventures.",
   },
 ]
 
 const samplePageLinks = [
-  {
-    text: "Page 2",
-    url: "page-2",
-    badge: false,
-    description:
-      "A simple example of linking to another page within a Gatsby site",
-  },
-  { text: "TypeScript", url: "using-typescript" },
-  { text: "Server Side Rendering", url: "using-ssr" },
-  { text: "Deferred Static Generation", url: "using-dsg" },
 ]
 
 const moreLinks = [
-  { text: "Join us on Discord", url: "https://gatsby.dev/discord" },
-  {
-    text: "Documentation",
-    url: "https://gatsbyjs.com/docs/",
-  },
-  {
-    text: "Starters",
-    url: "https://gatsbyjs.com/starters/",
-  },
-  {
-    text: "Showcase",
-    url: "https://gatsbyjs.com/showcase/",
-  },
-  {
-    text: "Contributing",
-    url: "https://www.gatsbyjs.com/contributing/",
-  },
-  { text: "Issues", url: "https://github.com/gatsbyjs/gatsby/issues" },
 ]
 
 const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`
@@ -73,19 +45,18 @@ const IndexPage = () => (
   <Layout>
     <div className={styles.textCenter}>
       <StaticImage
-        src="../images/example.png"
+        src="../images/sog1.jpg"
         loading="eager"
-        width={64}
+        width={464}
         quality={95}
         formats={["auto", "webp", "avif"]}
         alt=""
         style={{ marginBottom: `var(--space-3)` }}
       />
       <h1>
-        Welcome to <b>Gatsby!</b>
+        Welcome to <b>Seattle Outdoor Gear</b>
       </h1>
       <p className={styles.intro}>
-        <b>Example pages:</b>{" "}
         {samplePageLinks.map((link, i) => (
           <React.Fragment key={link.url}>
             <Link to={link.url}>{link.text}</Link>
@@ -93,7 +64,6 @@ const IndexPage = () => (
           </React.Fragment>
         ))}
         <br />
-        Edit <code>src/pages/index.js</code> to update this page.
       </p>
     </div>
     <ul className={styles.list}>

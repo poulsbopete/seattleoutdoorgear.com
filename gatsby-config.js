@@ -9,9 +9,9 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Seattle Outdoor Gear`,
+    description: `Get started with your outdoor adventures with the people that know the elements. From rain, snow, and sun all at the same time on the West Coast of the USA - Seattle.`,
+    author: `admin`,
     siteUrl: `https://seattleoutdoorgear.com`,
   },
   plugins: [
